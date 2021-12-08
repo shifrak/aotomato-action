@@ -12,8 +12,8 @@ jobs: # list of jobs
         name: show current dir
       - run: ls -la
         name: Look around
-      - run: tar -czf myrepo.tgz README.rm
+      - run: tar -czf myrepo.tgz README.md
         name: Build teh code
-      - run: tar -tczf myrepo.tgz README.rm
+      - run: tar -tczf myrepo.tgz README.md
         name: Check Build 
       
