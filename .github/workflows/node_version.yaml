@@ -6,7 +6,7 @@ on:
         description: 'Insert node version'
         required: true
         default: 15
-job:
+jobs:
   update_node:
     runs-on: ubuntu-latest
     steps:
