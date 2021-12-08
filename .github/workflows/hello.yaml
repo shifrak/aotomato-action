@@ -1,7 +1,7 @@
 name: my-first-gh-workflow # workflow name
 on: [push] # triggering event
 jobs: # list of jobs
-say-hello: #job name
-runs-on: ubuntu-latest
-steps: #list of steps
-- run: echo Hello Github Actions #step definition
+  say-hello: #job name
+    runs-on: ubuntu-latest
+    steps: #list of steps
+      - run: echo Hello Github Actions #step definition
