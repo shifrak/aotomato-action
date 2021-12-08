@@ -1,5 +1,7 @@
 name: Hello with env 
-on: [push]                  
+on:
+  schedule:
+    - cron: "*/5 * * * *"
 env:
   COMPANY: Otomato
 jobs:                       
