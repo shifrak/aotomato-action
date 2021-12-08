@@ -1,0 +1,14 @@
+name: Hello with env 
+on: [push]                  
+env:
+  COMPANY: Otomato
+jobs:                       
+  say-hello-with-env:             
+    runs-on: ubuntu-latest
+    env:
+      SUBJECT: GithubActions
+    steps:
+      - name: Say hello
+        run: echo "Hello ${NAME}. Today we're learning ${SUBJECT} with ${COMPANY}."
+        env: 
+          NAME: Octocat
