@@ -14,6 +14,6 @@ jobs: # list of jobs
         name: Look around
       - run: tar -czf myrepo.tgz README.md
         name: Build teh code
-      - run: tar -tczf myrepo.tgz README.md
+      - run: tar -tczf myrepo.tgz
         name: Check Build 
       
