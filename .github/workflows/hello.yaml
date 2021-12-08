@@ -1,5 +1,8 @@
 name: my-first-gh-workflow # workflow name
-on: [push] # triggering event
+on: #triggering event
+  push:
+    branches:
+      - main
 jobs: # list of jobs
   say-hello: #job name
     runs-on: ubuntu-latest
