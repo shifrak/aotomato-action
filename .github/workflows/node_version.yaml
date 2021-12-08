@@ -15,7 +15,7 @@ job:
       - name: action/setup
         uses: actions/setup-node@v2
         with:
-          node-version: '14'
+          node-version: ${{ github.event.inputs.node_version }}
       - run: npm install
         name: install
       - run: npm test
