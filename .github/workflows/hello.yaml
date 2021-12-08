@@ -13,7 +13,7 @@ jobs: # list of jobs
       - run: ls -la
         name: Look around
       - run: tar -czf myrepo.tgz README.md
-        name: Build teh code
-      - run: tar -tczf myrepo.tgz
+        name: Build the code
+      - run: tar -tzvf myrepo.tgz
         name: Check Build 
       
