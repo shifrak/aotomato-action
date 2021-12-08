@@ -1,0 +1,22 @@
+name: install node by parameter - Mannualyy triggered workflow
+on:
+  workflow_dispatch:
+    inputs:
+      node_version:
+        description: 'Insert node version'
+        required: true
+        default: 15
+job:
+  update_node:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        name: checkout
+      - name: action/setup
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+      - run: npm install
+        name: install
+      - run: npm test
+        name: test
