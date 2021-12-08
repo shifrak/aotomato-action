@@ -16,3 +16,9 @@ jobs:
           node-version: ${{ github.event.inputs.node_version }}
       - run: node --version
         name: get version
+  show_branch_name:
+    runs-on: ubuntu-latest
+    if: contains(github.ref, 'feature')
+    steps:
+      - name: print branch
+        run: echo ${GITHUB_REF}
